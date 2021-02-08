@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate.search.backend:
+        directory.root: ./lucene/indexes
+        lucene_version: LATEST
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/search_demo
+    username: guest
+    password: guest
